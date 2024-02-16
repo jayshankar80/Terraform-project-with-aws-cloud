@@ -1,18 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
-  }
-}
-
-provider "aws" {
-  region     = "us-east-1"
-  access_key = "AKIA6LOB7QER4GUKOJPV"
-  secret_key = "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"
-}
-
-
 resource "aws_vpc" "test-vpc" {
     cidr_block = var.cidr
 }
